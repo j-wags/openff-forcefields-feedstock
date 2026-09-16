@@ -3,6 +3,7 @@ from packaging.version import Version
 
 from openforcefields import __version__
 
+print(f"Version in memory is {__version__=}")
 assert Version(__version__) > Version("0.0.0")
 
 ForceField("openff-1.0.0.offxml")
